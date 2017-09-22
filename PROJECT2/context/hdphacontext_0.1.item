@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_No4KgJ_NEeexlMpodoHGuA" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_No4KgZ_NEeexlMpodoHGuA" comment="" name="hdp26_StagingDirectory" prompt="hdp26_StagingDirectory?" promptNeeded="false" type="id_String" value="/user"/>
+    <contextParameter xmi:id="_No4Kgp_NEeexlMpodoHGuA" comment="" name="hdp26_JTOrRMPrin" prompt="hdp26_JTOrRMPrin?" promptNeeded="false" type="id_String" value="rm/_HOST@HDPHA.COM"/>
+    <contextParameter xmi:id="_No4Kg5_NEeexlMpodoHGuA" comment="" name="hdp26_NameNodeUri" prompt="hdp26_NameNodeUri?" promptNeeded="false" type="id_String" value="hdfs://hdptestha"/>
+    <contextParameter xmi:id="_No4KhJ_NEeexlMpodoHGuA" comment="" name="hdp26_ResourceManager" prompt="hdp26_ResourceManager?" promptNeeded="false" type="id_String" value="hdp26node2:8032"/>
+    <contextParameter xmi:id="_No4KhZ_NEeexlMpodoHGuA" comment="" name="hdp26_ResourceManagerScheduler" prompt="hdp26_ResourceManagerScheduler?" promptNeeded="false" type="id_String" value="hdp26node2:8030"/>
+    <contextParameter xmi:id="_No4Khp_NEeexlMpodoHGuA" comment="" name="hdp26_JobHistroyPrin" prompt="hdp26_JobHistroyPrin?" promptNeeded="false" type="id_String" value="jhs/_HOST@HDPHA.COM"/>
+    <contextParameter xmi:id="_No4Kh5_NEeexlMpodoHGuA" comment="" name="hdp26_NameNodePrin" prompt="hdp26_NameNodePrin?" promptNeeded="false" type="id_String" value="nn/_HOST@HDPHA.COM"/>
+    <contextParameter xmi:id="_No4KiJ_NEeexlMpodoHGuA" comment="" name="hdp26_KeyTab" prompt="hdp26_KeyTab?" promptNeeded="false" type="id_String" value="/home/hdpuser/hdpuser.keytab"/>
+    <contextParameter xmi:id="_No4KiZ_NEeexlMpodoHGuA" comment="" name="hdp26_JobHistory" prompt="hdp26_JobHistory?" promptNeeded="false" type="id_String" value="hdp26node2:10020"/>
+    <contextParameter xmi:id="_No4Kip_NEeexlMpodoHGuA" comment="" name="hdp26_Principal" prompt="hdp26_Principal?" promptNeeded="false" type="id_String" value="hdpuser"/>
+    <contextParameter xmi:id="_No4Ki5_NEeexlMpodoHGuA" comment="" name="hdp26_spark_driver_extraJavaOptions" prompt="hdp26_spark_driver_extraJavaOptions?" promptNeeded="false" type="id_String" value="-Dhdp.version=2.6.0.3-8"/>
+    <contextParameter xmi:id="_No4KjJ_NEeexlMpodoHGuA" comment="" name="hdp26_spark_yarn_am_extraJavaOptions" prompt="hdp26_spark_yarn_am_extraJavaOptions?" promptNeeded="false" type="id_String" value="-Dhdp.version=2.6.0.3-8"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_No4KjZ_NEeexlMpodoHGuA" confirmationNeeded="false" name="PROD">
+    <contextParameter xmi:id="_No4Kjp_NEeexlMpodoHGuA" comment="" name="hdp26_StagingDirectory" prompt="hdp26_StagingDirectory?" promptNeeded="false" type="id_String" value="/user"/>
+    <contextParameter xmi:id="_No4Kj5_NEeexlMpodoHGuA" comment="" name="hdp26_JTOrRMPrin" prompt="hdp26_JTOrRMPrin?" promptNeeded="false" type="id_String" value="rm/_HOST@HORTONWORKSHA.COM"/>
+    <contextParameter xmi:id="_No4KkJ_NEeexlMpodoHGuA" comment="" name="hdp26_NameNodeUri" prompt="hdp26_NameNodeUri?" promptNeeded="false" type="id_String" value="hdfs://hdp24ha"/>
+    <contextParameter xmi:id="_No4KkZ_NEeexlMpodoHGuA" comment="" name="hdp26_ResourceManager" prompt="hdp26_ResourceManager?" promptNeeded="false" type="id_String" value="hdp24node1:8032"/>
+    <contextParameter xmi:id="_No4Kkp_NEeexlMpodoHGuA" comment="" name="hdp26_ResourceManagerScheduler" prompt="hdp26_ResourceManagerScheduler?" promptNeeded="false" type="id_String" value="hdp24node1:8030"/>
+    <contextParameter xmi:id="_No4Kk5_NEeexlMpodoHGuA" comment="" name="hdp26_JobHistroyPrin" prompt="hdp26_JobHistroyPrin?" promptNeeded="false" type="id_String" value="jhs/_HOST@HORTONWORKSHA.COM"/>
+    <contextParameter xmi:id="_No4KlJ_NEeexlMpodoHGuA" comment="" name="hdp26_NameNodePrin" prompt="hdp26_NameNodePrin?" promptNeeded="false" type="id_String" value="nn/_HOST@HORTONWORKSHA.COM"/>
+    <contextParameter xmi:id="_No4KlZ_NEeexlMpodoHGuA" comment="" name="hdp26_KeyTab" prompt="hdp26_KeyTab?" promptNeeded="false" type="id_String" value="/home/hdpuser/hdpuser.keytab"/>
+    <contextParameter xmi:id="_No4Klp_NEeexlMpodoHGuA" comment="" name="hdp26_JobHistory" prompt="hdp26_JobHistory?" promptNeeded="false" type="id_String" value="hdp24node1:10020"/>
+    <contextParameter xmi:id="_No4Kl5_NEeexlMpodoHGuA" comment="" name="hdp26_Principal" prompt="hdp26_Principal?" promptNeeded="false" type="id_String" value="hdpuser"/>
+    <contextParameter xmi:id="_No4KmJ_NEeexlMpodoHGuA" comment="" name="hdp26_spark_driver_extraJavaOptions" prompt="hdp26_spark_driver_extraJavaOptions?" promptNeeded="false" type="id_String" value="-Dhdp.version=2.4.3.0-227"/>
+    <contextParameter xmi:id="_No4KmZ_NEeexlMpodoHGuA" comment="" name="hdp26_spark_yarn_am_extraJavaOptions" prompt="hdp26_spark_yarn_am_extraJavaOptions?" promptNeeded="false" type="id_String" value="-Dhdp.version=2.4.3.0-227"/>
+  </talendfile:ContextType>
+</xmi:XMI>

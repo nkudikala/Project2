@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TalendMetadata:DatabaseConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmi:id="_lOazQDvGEeeL0sITf2nR4Q" DatabaseType="Hive" URL="jdbc:hive2://hdptestha:10000/default;principal=hive/_HOST@HDPHA.COM" Port="10000" Username="" ServerName="hdptestha" SID="default" DbmsId="hive_id" ProductId="HIVE">
+  <parameters xmi:id="_lOazQTvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_USE_YARN" value="true"/>
+  <parameters xmi:id="_lOazQjvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_RESOURCEMANAGER_SCHEDULER_ADDRESS" value="context.hdp26_ResourceManagerScheduler"/>
+  <parameters xmi:id="_lOazQzvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_USEKEYTAB" value="true"/>
+  <parameters xmi:id="_lOazRDvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_USE_CUSTOM_CONFS" value="true"/>
+  <parameters xmi:id="_lOazRTvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_NAME_NODE_URL" value="context.hdp26_NameNodeUri"/>
+  <parameters xmi:id="_lOazRjvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_USERNAME" value=""/>
+  <parameters xmi:id="_lOazRzvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_HADOOP_CLUSTER_ID" value="_YLB1cDvGEeeL0sITf2nR4Q"/>
+  <parameters xmi:id="_lOazSDvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_JOB_HISTORY_PRINCIPAL" value="context.hdp26_JobHistroyPrin"/>
+  <parameters xmi:id="_lOazSTvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_HBASE_VERSION" value="HDP_2_6"/>
+  <parameters xmi:id="_lOazSjvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_JOB_TRACKER_URL" value="context.hdp26_ResourceManager"/>
+  <parameters xmi:id="_lOazSzvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_JOBHISTORY_ADDRESS" value="context.hdp26_JobHistory"/>
+  <parameters xmi:id="_lOazTDvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_HIVE_VERSION" value="HDP_2_6"/>
+  <parameters xmi:id="_lOazTTvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_USE_DATANODE_HOSTNAME" value="true"/>
+  <parameters xmi:id="_lOazTjvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_DB_SERVER" value="hdptestha"/>
+  <parameters xmi:id="_lOazTzvGEeeL0sITf2nR4Q" key="HIVE_AUTHENTICATION_USERNAME" value="hive"/>
+  <parameters xmi:id="_lOazUDvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_DB_TYPE" value="Hive"/>
+  <parameters xmi:id="_lOazUTvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_MAPRDB_AUTHENTICATION_USE_MAPRTICKET" value="false"/>
+  <parameters xmi:id="_lOazUjvGEeeL0sITf2nR4Q" key="HIVE_AUTHENTICATION_HIVEPRINCIPLA" value="hive/_HOST@HDPHA.COM"/>
+  <parameters xmi:id="_lOazUzvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_JOB_TRACKER_PRINCIPAL" value="context.hdp26_JTOrRMPrin"/>
+  <parameters xmi:id="_lOazVDvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_HIVE_DISTRIBUTION" value="HORTONWORKS"/>
+  <parameters xmi:id="_lOazVTvGEeeL0sITf2nR4Q" key="HIVE_AUTHENTICATION_PASSWORD" value="SECRET:hive-site:2:javax.jdo.option.ConnectionPassword"/>
+  <parameters xmi:id="_lOazVjvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_MAPRDB_VERSION" value="HDP_2_6"/>
+  <parameters xmi:id="_lOazVzvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_MAPRDB_DISTRIBUTION" value="HORTONWORKS"/>
+  <parameters xmi:id="_lOazWDvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_USE_KRB" value="true"/>
+  <parameters xmi:id="_lOazWTvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_HBASE_DISTRIBUTION" value="HORTONWORKS"/>
+  <parameters xmi:id="_lOazWjvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_STAGING_DIRECTORY" value="context.hdp26_StagingDirectory"/>
+  <parameters xmi:id="_lOazWzvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_NAME_NODE_PRINCIPAL" value="context.hdp26_NameNodePrin"/>
+  <parameters xmi:id="_lOazXDvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_DB_PRODUCT" value="HIVE"/>
+  <parameters xmi:id="_lOazXTvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_HIVE_AUTHENTICATION_USE_MAPRTICKET" value="false"/>
+  <parameters xmi:id="_lOazXjvGEeeL0sITf2nR4Q" key="HIVE_AUTHENTICATION_METASTOREURL" value="thrift://hdp26node2:9083"/>
+  <parameters xmi:id="_lOazXzvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_HBASE_AUTHENTICATION_USE_MAPRTICKET" value="false"/>
+  <parameters xmi:id="_lOazYDvGEeeL0sITf2nR4Q" key="HIVE_SERVER_VERSION" value="HIVE2"/>
+  <parameters xmi:id="_lOazYTvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_HIVE_MODE" value="STANDALONE"/>
+  <parameters xmi:id="_0KwPsDvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_HADOOP_CUSTOM_JARS"/>
+  <parameters xmi:id="_YdstkFVTEeehNdHLvUuz_A" key="CONN_PARA_KEY_KEYTAB_PRINCIPLA" value="context.hdp26_Principal"/>
+  <parameters xmi:id="_YdstkVVTEeehNdHLvUuz_A" key="CONN_PARA_KEY_KEYTAB" value="context.hdp26_KeyTab"/>
+</TalendMetadata:DatabaseConnection>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_lNg0UDvGEeeL0sITf2nR4Q" dataPackage="_lNg0cTvGEeeL0sITf2nR4Q" DatabaseType="HBase" Port="2181" Username="" ServerName="hdp26node2,hdp26node3,hdp26master" SID="HBase" DbmsId="mysql_id" ProductId="HBASE">
+    <parameters xmi:id="_lNg0UTvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_DB_PORT" value="2181"/>
+    <parameters xmi:id="_lNg0UjvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_USE_YARN" value="true"/>
+    <parameters xmi:id="_lNg0UzvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_RESOURCEMANAGER_SCHEDULER_ADDRESS" value="context.hdp26_ResourceManagerScheduler"/>
+    <parameters xmi:id="_lNg0VDvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_USEKEYTAB" value="true"/>
+    <parameters xmi:id="_lNg0VTvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_USE_CUSTOM_CONFS" value="true"/>
+    <parameters xmi:id="_lNg0VjvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_HBASE_AUTHENTICATION_REGIONSERVERPRINCIPAL" value="hbase/_HOST@HDPHA.COM"/>
+    <parameters xmi:id="_lNg0VzvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_NAME_NODE_URL" value="context.hdp26_NameNodeUri"/>
+    <parameters xmi:id="_lNg0WDvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_USERNAME" value=""/>
+    <parameters xmi:id="_lNg0WTvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_HADOOP_CLUSTER_ID" value="_YLB1cDvGEeeL0sITf2nR4Q"/>
+    <parameters xmi:id="_lNg0WjvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_JOB_HISTORY_PRINCIPAL" value="context.hdp26_JobHistroyPrin"/>
+    <parameters xmi:id="_lNg0WzvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_HBASE_VERSION" value="HDP_2_6"/>
+    <parameters xmi:id="_lNg0XDvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_JOB_TRACKER_URL" value="context.hdp26_ResourceManager"/>
+    <parameters xmi:id="_lNg0XTvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_JOBHISTORY_ADDRESS" value="context.hdp26_JobHistory"/>
+    <parameters xmi:id="_lNg0XjvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_HIVE_VERSION" value="HDP_2_6"/>
+    <parameters xmi:id="_lNg0XzvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_HBASE_ZNODE_PARENT" value="/hbase-secure"/>
+    <parameters xmi:id="_lNg0YDvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_USE_DATANODE_HOSTNAME" value="true"/>
+    <parameters xmi:id="_lNg0YTvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_DB_SERVER" value="hdptestha"/>
+    <parameters xmi:id="_lNg0YjvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_DB_TYPE" value="HBase"/>
+    <parameters xmi:id="_lNg0YzvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_MAPRDB_AUTHENTICATION_USE_MAPRTICKET" value="false"/>
+    <parameters xmi:id="_lNg0ZDvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_JOB_TRACKER_PRINCIPAL" value="context.hdp26_JTOrRMPrin"/>
+    <parameters xmi:id="_lNg0ZTvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_HIVE_DISTRIBUTION" value="HORTONWORKS"/>
+    <parameters xmi:id="_lNg0ZjvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_MAPRDB_VERSION" value="HDP_2_6"/>
+    <parameters xmi:id="_lNg0ZzvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_MAPRDB_DISTRIBUTION" value="HORTONWORKS"/>
+    <parameters xmi:id="_lNg0aDvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_HBASE_AUTHENTICATION_MASTERPRINCIPAL" value="hbase/_HOST@HDPHA.COM"/>
+    <parameters xmi:id="_lNg0aTvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_USE_KRB" value="true"/>
+    <parameters xmi:id="_lNg0ajvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_HBASE_DISTRIBUTION" value="HORTONWORKS"/>
+    <parameters xmi:id="_lNg0azvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_STAGING_DIRECTORY" value="context.hdp26_StagingDirectory"/>
+    <parameters xmi:id="_lNg0bDvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_NAME_NODE_PRINCIPAL" value="context.hdp26_NameNodePrin"/>
+    <parameters xmi:id="_lNg0bTvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_DB_PRODUCT" value="HBASE"/>
+    <parameters xmi:id="_lNg0bjvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_HIVE_AUTHENTICATION_USE_MAPRTICKET" value="false"/>
+    <parameters xmi:id="_lNg0bzvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_HBASE_SET_ZNODE_PARENT" value="true"/>
+    <parameters xmi:id="_lNg0cDvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_HBASE_AUTHENTICATION_USE_MAPRTICKET" value="false"/>
+    <parameters xmi:id="_0KIkoDvGEeeL0sITf2nR4Q" key="CONN_PARA_KEY_HADOOP_CUSTOM_JARS"/>
+    <parameters xmi:id="_YdSd4FVTEeehNdHLvUuz_A" key="CONN_PARA_KEY_KEYTAB_PRINCIPLA" value="context.hdp26_Principal"/>
+    <parameters xmi:id="_YdSd4VVTEeehNdHLvUuz_A" key="CONN_PARA_KEY_KEYTAB" value="context.hdp26_KeyTab"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_lNg0cTvGEeeL0sITf2nR4Q" name="HBase" dataManager="_lNg0UDvGEeeL0sITf2nR4Q"/>
+</xmi:XMI>

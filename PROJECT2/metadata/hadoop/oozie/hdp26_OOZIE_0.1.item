@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TalendOOZIE:OozieConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendOOZIE="http://www.talend.org/oozie" xmi:id="_lOnAgDvGEeeL0sITf2nR4Q" relativeHadoopClusterId="_YLB1cDvGEeeL0sITf2nR4Q" oozieEndPoind="http://hdp26node2:11000/oozie" enableKerberos="true"/>
