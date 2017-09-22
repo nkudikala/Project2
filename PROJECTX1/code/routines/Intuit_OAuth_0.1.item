@@ -1,0 +1,141 @@
+package routines;
+
+import oauth.signpost.OAuthConsumer;
+import oauth.signpost.OAuthProvider;
+import oauth.signpost.basic.DefaultOAuthConsumer;
+import oauth.signpost.basic.DefaultOAuthProvider;
+import oauth.signpost.exception.OAuthCommunicationException;
+import oauth.signpost.exception.OAuthExpectationFailedException;
+import oauth.signpost.exception.OAuthMessageSignerException;
+import oauth.signpost.exception.OAuthNotAuthorizedException;
+import oauth.signpost.http.HttpParameters;
+
+import org.apache.http.HttpResponse;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.methods.HttpPost; 
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.DefaultHttpClient;
+
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.io.UnsupportedEncodingException;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.Random;
+import java.util.Scanner;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class Intuit_OAuth {
+
+    /**
+     * sign: return the signed url as a string
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("consumer_key") input: The consumer key.
+     * {param} string("consumer_secret") input: The consumer_secret.
+     * {param} string("access_token") input: The access token.
+     * {param} string("access_token_secret") input: The access token secret.
+     * {param} string("url") input: The url for which to generate the authorization.
+     * 
+     * {example} sign("world") # hello world !.
+     */
+    public static String signSimpleURL(String consumer_key, String consumer_secret, 
+    											String access_token, String access_token_secret,
+    											String url) {
+        String signed_url = "";
+        
+    	OAuthConsumer oauthconsumer = new DefaultOAuthConsumer(consumer_key, consumer_secret);
+    	oauthconsumer.setTokenWithSecret(access_token, access_token_secret);
+    	try {
+    		signed_url = oauthconsumer.sign(url);
+			
+		} catch (OAuthMessageSignerException e) {
+			e.printStackTrace();
+		} catch (OAuthExpectationFailedException e) {
+			e.printStackTrace();
+		} catch (OAuthCommunicationException e) {
+			e.printStackTrace();
+		}
+    	
+    	return signed_url;
+    }
+
+
+    
+    public static String httpPostWithJSONBody(String consumer_key, String consumer_secret, 
+			String access_token, String access_token_secret,
+			String endpointUrl, String JSONPayload) throws Exception {
+    		
+		OAuthConsumer oauthconsumer = new DefaultOAuthConsumer(consumer_key, consumer_secret);
+		oauthconsumer.setTokenWithSecret(access_token, access_token_secret);
+					
+		URL url = new URL(endpointUrl);
+	    HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
+	    urlConnection.setRequestProperty("Accept", "application/json");
+	    urlConnection.setRequestProperty("Content-Type", "application/json; charset=utf8");
+	    urlConnection.setRequestMethod("POST");
+	    urlConnection.setDoOutput(true);
+			
+	    //HttpParameters doubleEncodedParams =  new HttpParameters();
+	    //doubleEncodedParams.put("realm", endpointUrl);
+	    //oauthconsumer.setAdditionalParameters(doubleEncodedParams);
+	    
+	    oauthconsumer.sign(urlConnection);
+	    
+	    //Send the payload to the connection
+	    OutputStreamWriter outputStreamWriter = null;
+	    try {
+	    	outputStreamWriter = new OutputStreamWriter(urlConnection.getOutputStream(), "UTF-8");
+	        outputStreamWriter.write(JSONPayload);
+	    } finally {
+	    	if (outputStreamWriter != null) {
+	    		outputStreamWriter.close();
+	        }
+	    }
+			
+	    //Send the request and read the output
+	    String responseString;
+	    try {
+	    	
+	    	System.out.println("Response: " + urlConnection.getResponseCode() + " " + urlConnection.getResponseMessage());
+	        
+	    	if (urlConnection.getResponseCode()!=200)
+	    	{
+	    		responseString = "{\"Error\":\"" + urlConnection.getResponseCode() + " " + urlConnection.getResponseMessage() + "\"}";
+	    	}
+	    	else
+	    	{	
+	    		InputStream in = new BufferedInputStream(urlConnection.getInputStream());
+	    		responseString = new Scanner(in,"UTF-8").useDelimiter("\\A").next();
+	    	}
+	    } finally {
+	    	urlConnection.disconnect();
+	    }   
+	    return responseString;
+    }    
+}

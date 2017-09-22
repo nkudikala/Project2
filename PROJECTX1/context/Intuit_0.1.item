@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_kBORgJ9JEeesE6meV3_K0Q" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_kBORgZ9JEeesE6meV3_K0Q" comment="" name="consumerKey" prompt="consumerKey?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_kBORgp9JEeesE6meV3_K0Q" comment="" name="consumerSecret" prompt="consumerSecret?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_kBORg59JEeesE6meV3_K0Q" comment="" name="accessToken" prompt="accessToken?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_kBORhJ9JEeesE6meV3_K0Q" comment="" name="accessTokenSecret" prompt="accessTokenSecret?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_kBORhZ9JEeesE6meV3_K0Q" comment="" name="realmId" prompt="realmId?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_kBORhp9JEeesE6meV3_K0Q" comment="" name="renewalDate" prompt="renewalDate?" promptNeeded="false" type="id_String" value=""/>
+</talendfile:ContextType>
