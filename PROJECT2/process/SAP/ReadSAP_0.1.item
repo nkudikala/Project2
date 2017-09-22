@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="hdp26_NameNodeUri" prompt="hdp26_NameNodeUri?" promptNeeded="false" repositoryContextId="_JEXHMGKoEeegxYLksUqK3w" type="id_String" value="hdfs://hdptestha"/>
+    <contextParameter comment="" name="hdp26_NameNodePrin" prompt="hdp26_NameNodePrin?" promptNeeded="false" repositoryContextId="_JEXHMGKoEeegxYLksUqK3w" type="id_String" value="nn/_HOST@HDPHA.COM"/>
+    <contextParameter comment="" name="hdp26_KeyTab" prompt="hdp26_KeyTab?" promptNeeded="false" repositoryContextId="_JEXHMGKoEeegxYLksUqK3w" type="id_String" value="/home/hdpuser/hdpuser.keytab"/>
+    <contextParameter comment="" name="hdp26_Principal" prompt="hdp26_Principal?" promptNeeded="false" repositoryContextId="_JEXHMGKoEeegxYLksUqK3w" type="id_String" value="hdpuser"/>
+  </context>
+  <context confirmationNeeded="false" name="PROD">
+    <contextParameter comment="" name="hdp26_NameNodeUri" prompt="hdp26_NameNodeUri?" promptNeeded="false" repositoryContextId="_JEXHMGKoEeegxYLksUqK3w" type="id_String" value="hdfs://hdp24ha"/>
+    <contextParameter comment="" name="hdp26_NameNodePrin" prompt="hdp26_NameNodePrin?" promptNeeded="false" repositoryContextId="_JEXHMGKoEeegxYLksUqK3w" type="id_String" value="nn/_HOST@HORTONWORKSHA.COM"/>
+    <contextParameter comment="" name="hdp26_KeyTab" prompt="hdp26_KeyTab?" promptNeeded="false" repositoryContextId="_JEXHMGKoEeegxYLksUqK3w" type="id_String" value="/home/hdpuser/hdpuser.keytab"/>
+    <contextParameter comment="" name="hdp26_Principal" prompt="hdp26_Principal?" promptNeeded="false" repositoryContextId="_JEXHMGKoEeegxYLksUqK3w" type="id_String" value="hdpuser"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms256M&quot;,&quot;-Xmx1024M&quot;,&quot;-Dhadoop.home.dir=C:/tmp/winutils&quot;]}" show="false"/>
+    <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="true" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;D:/Talend/6.4.1/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_j97FQEnSEeaBmcfeETL3cw" name="DQTechnical"/>
+    <routinesParameter id="_j9WdgEnSEeaBmcfeETL3cw" name="DataMasking"/>
+    <routinesParameter id="_j-NZIEnSEeaBmcfeETL3cw" name="DataOperation"/>
+    <routinesParameter id="_j9oxY0nSEeaBmcfeETL3cw" name="DataQualityDependencies"/>
+    <routinesParameter id="_j9iqwEnSEeaBmcfeETL3cw" name="DataQuality"/>
+    <routinesParameter id="_j90-oEnSEeaBmcfeETL3cw" name="DqStringHandling"/>
+    <routinesParameter id="_j4lSQknSEeaBmcfeETL3cw" name="MDM"/>
+    <routinesParameter id="_j-TfwEnSEeaBmcfeETL3cw" name="Mathematical"/>
+    <routinesParameter id="_j-ftAEnSEeaBmcfeETL3cw" name="Numeric"/>
+    <routinesParameter id="_j-lzoEnSEeaBmcfeETL3cw" name="Relational"/>
+    <routinesParameter id="_j-BL4EnSEeaBmcfeETL3cw" name="SQLike"/>
+    <routinesParameter id="_j-lzpEnSEeaBmcfeETL3cw" name="StringHandling"/>
+    <routinesParameter id="_j-r6Q0nSEeaBmcfeETL3cw" name="TalendDataGenerator"/>
+    <routinesParameter id="_j-4HgEnSEeaBmcfeETL3cw" name="TalendDate"/>
+    <routinesParameter id="_j--OIEnSEeaBmcfeETL3cw" name="TalendString"/>
+    <routinesParameter id="_JGTNoIdXEee5_tmvY7x1vA" name="TalendStringUtil"/>
+  </parameters>
+  <node componentName="tHDFSConnection" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHDFSConnection_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_zBk4wJ18Eee6SKGqm1HfGA" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DISTRIBUTION" value="HORTONWORKS"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="HDP_2_6"/>
+    <elementParameter field="HADOOP_DISTRIBUTION" name="HDFS" value=""/>
+    <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTHENTICATION_MODE" value="USERNAME" show="false"/>
+    <elementParameter field="TEXT" name="FS_DEFAULT_NAME" value="&quot;hdfs://hdptestha&quot;"/>
+    <elementParameter field="CHECK" name="CONFIGURATIONS_FROM_CLASSPATH" value="false"/>
+    <elementParameter field="CHECK" name="USE_KRB" value="true"/>
+    <elementParameter field="TEXT" name="NAMENODE_PRINCIPAL" value="&quot;nn/_HOST@HDPHA.COM&quot;"/>
+    <elementParameter field="CHECK" name="USE_KEYTAB" value="false"/>
+    <elementParameter field="TEXT" name="PRINCIPAL" value="context.hdp26_Principal" show="false"/>
+    <elementParameter field="FILE" name="KEYTAB_PATH" value="context.hdp26_KeyTab" show="false"/>
+    <elementParameter field="CHECK" name="USE_MAPRTICKET" value="false" show="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;anonymous&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GROUP" value="&quot;supergroup&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="MAPRTICKET_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_CLUSTER" value="&quot;demo.mapr.com&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_DURATION" value="86400L" show="false"/>
+    <elementParameter field="TABLE" name="HADOOP_ADVANCED_PROPERTIES"/>
+    <elementParameter field="CHECK" name="USE_DATANODE_HOSTNAME" value="true"/>
+    <elementParameter field="CHECK" name="USE_HDFS_ENCRYPTION" value="false"/>
+    <elementParameter field="TEXT" name="HDFS_ENCRYPTION_KEY_PROVIDER" value="&quot;kms://http@localhost:16000/kms&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_MAPR_HOME_DIR" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MAPR_HOME_DIR" value="&quot;/opt/mapr&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_HADOOP_LOGIN" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HADOOP_LOGIN" value="&quot;kerberos&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_kmAzcP6REeaE_Y0SuX6sMA - customer" show="false"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="false"/>
+    <elementParameter field="TABLE" name="VALUES" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="customer_id"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="firstname"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="lastname"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="email"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="streetAddress"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="state"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="postalCode"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="gender"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dob"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="current_flag"/>
+      <elementValue elementRef="VALUE" value=""/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+    <elementParameter field="TABLE" name="INTABLE" show="false"/>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="true"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value="1,Janna,Bradshaw,id.libero@aarcuSed.co.uk,2352 E Fowler Avenue,WI,42944,F,01-06-1987,true&#xD;&#xA;2,Dai,Bowers,dolor.egestas.rhoncus@molestie.co.uk,3495 Burnett Road,AZ,40908,F,26-05-1993,true&#xD;&#xA;3,Vanna,Acosta,dis@egestasblandit.net,1136 South Roosevelt Drive,OR,27187,F,14-09-1985,true&#xD;&#xA;4,Ava,Cantu,Curae.Donec.tincidunt@ametfaucibus.net,758 Carpinteria Avenue,SD,33132,F,14-09-1966,true&#xD;&#xA;5,Ivory,Jacobson,Nulla.interdum@dictumProineget.co.uk,2488 Monroe Street,NV,28487,F,04-02-1973,true&#xD;&#xA;6,Jesse,Smith,eu@ullamcorpervelitin.net,355 East 1st Street,OK,38782,F,17-01-1967,true&#xD;&#xA;7,Beck,Santos,lectus.justo@faucibusid.co.uk,2992 Camelback Rd,NJ,40298,F,31-12-1986,true&#xD;&#xA;8,Rama,Goodman,tellus.Nunc@neque.org,337 Timberlane Drive,KY,33884,M,05-06-1978,true&#xD;&#xA;9,Lyle,England,tempus@Infaucibus.org,1486 French Camp Turnpike Road,NC,26893,F,16-01-1956,true&#xD;&#xA;10,Erasmus,Stuart,mi.tempor.lorem@arcu.org,4176 Cabrillo Highway,GA,29126,F,27-02-1952,true&#xD;&#xA;11,Gil,Simpson,vestibulum.neque@dictumPhasellusin.com,4016 North Preisker Lane,SC,43667,F,30-10-1966,true&#xD;&#xA;12,Cherokee,Mcbride,nibh.vulputate.mauris@Etiamlaoreet.edu,1352 Calle Real,WI,26651,F,19-09-1960,true&#xD;&#xA;13,Alden,Finley,Nunc.mauris.sapien@sagittissemperNam.net,2303 Cleveland Ave.,HI,44636,M,30-04-1962,true&#xD;&#xA;14,Lee,King,elit.pede@egestas.edu,2504 Santa Ana Freeway,MD,43659,F,27-04-1966,true&#xD;&#xA;15,Alyssa,Randall,Integer@etmagnaPraesent.org,4075 Bailard Avenue,FL,42198,F,15-09-1976,true&#xD;&#xA;16,Shellie,Cleveland,ante.bibendum@incursus.ca,3911 Grandview Drive,AL,44275,F,05-02-1976,true&#xD;&#xA;17,Wyoming,Jarvis,Ut@sit.org,1714 Lake Tahoe Blvd.,WI,28800,F,17-03-1945,true&#xD;&#xA;18,Ori,Hicks,enim.Suspendisse.aliquet@dignissimpharetra.co.uk,3240 North Preisker Lane,AZ,41727,F,10-07-1960,true&#xD;&#xA;19,Levi,Howell,Lorem.ipsum.dolor@adipiscingnonluctus.net,1578 Newbury Road,NV,29741,F,05-06-1948,true&#xD;&#xA;20,Jesse,Smith,eu@ullamcorpervelitin.net,1127 Hutchinson Rd,AK,43770,F,04-08-1971,true&#xD;&#xA;21,Savannah,Morse,Nullam.scelerisque@atpede.edu,4325 124th,OR,26183,F,14-08-1952,true&#xD;&#xA;22,Nash,Brown,orci@at.co.uk,3893 East Calle Primera,IL,34101,F,25-06-1971,true&#xD;&#xA;23,Charity,Parker,ipsum.Curabitur.consequat@infaucibus.net,4123 Harry S Truman Blvd,MO,45425,F,05-09-1961,true&#xD;&#xA;24,Colt,Nelson,at.libero.Morbi@molestie.com,2044 E Fowler Avenue,PA,40492,M,04-11-1963,true&#xD;&#xA;25,Fay,Berry,nulla.Integer.urna@volutpatNullafacilisis.co.uk,2061 Jean de la Fontaine,IL,41697,F,20-10-1995,true&#xD;&#xA;26,Sonia,Cooke,Quisque.libero@perconubianostra.org,1851 Carpinteria South,KY,43470,F,17-07-1975,true&#xD;&#xA;27,Abbot,Wolf,at.velit@liberomaurisaliquam.com,4081 Lindbergh Blvd,NE,44467,F,27-06-1956,true&#xD;&#xA;28,Hiroko,Duke,Cras.dolor.dolor@convallis.edu,2714 Bayshore Freeway,WY,32162,M,09-08-1980,true&#xD;&#xA;29,Clio,Weber,nec.ante@Sedcongue.edu,507 South Roosevelt Drive,IL,38021,F,30-01-1952,true&#xD;&#xA;30,Dai,Park,nec.euismod.in@dictum.org,4122 San Ysidro Blvd,ME,28633,F,24-08-1949,true&#xD;&#xA;31,Brady,Sexton,ante@Nullam.co.uk,4297 North Atherton Street,NE,28117,F,14-10-1958,true&#xD;&#xA;32,Teegan,Fitzpatrick,tellus.Aenean@non.co.uk,1374 French Camp Turnpike Road,NY,26200,F,06-08-1967,true&#xD;&#xA;33,Oren,Bridges,nunc.sed.pede@Aliquamnecenim.com,1631 Camelback Rd,NC,41723,F,04-08-1957,true&#xD;&#xA;34,Shaeleigh,Combs,dui.nec@vitae.ca,4206 Redwood Highway,HI,43747,F,15-12-1994,true&#xD;&#xA;35,Dexter,Hancock,in.molestie@a.co.uk,3633 San Simeon,AR,30603,F,29-11-1983,true&#xD;&#xA;36,Kaye,Brock,pharetra.ut.pharetra@a.org,3064 120th,OH,38323,M,10-05-1969,true&#xD;&#xA;37,Shana,Medina,a@porttitortellusnon.net,1487 N Harrison St,MO,44370,F,08-07-1970,true&#xD;&#xA;38,Darrel,Lowery,adipiscing@tellusjustosit.ca,1907 Apalachee Parkway,MD,26695,M,23-08-1985,true&#xD;&#xA;39,Elaine,Floyd,enim.consequat@imperdiet.org,1789 W. Russell St.,WY,31497,F,24-05-1953,true&#xD;&#xA;40,Mallory,Hernandez,est.mollis@acturpisegestas.net,2035 French Camp Turnpike Road,TX,39701,F,13-07-1987,true&#xD;&#xA;41,Brandon,Langley,Pellentesque.ultricies@vellectusCum.net,120 Woodson Rd.,ND,45387,F,24-07-1988,true&#xD;&#xA;42,Sigourney,Salas,consectetuer@nullaIntegerurna.edu,3881 Hutchinson Rd,WY,45328,M,31-07-1955,true&#xD;&#xA;43,Cassandra,Hall,metus.sit@velit.ca,4076 Carpinteria North,WI,27670,M,30-04-1972,true&#xD;&#xA;44,Rhoda,Mccormick,auctor@sedest.co.uk,4652 East Calle Primera,AL,44855,F,15-09-1976,true&#xD;&#xA;45,Fuller,Blair,tristique@ultriciesadipiscingenim.org,606 French Camp Turnpike Road,KY,41934,M,01-01-1995,true&#xD;&#xA;46,Sylvester,Sosa,congue.turpis@velconvallisin.net,1556 Jean de la Fontaine,MA,34559,F,07-10-1954,true&#xD;&#xA;47,Tanek,Davis,eu.accumsan.sed@Donec.ca,652 Bowles Avenue,TX,41973,F,14-03-1964,true&#xD;&#xA;48,Eagan,Avery,egestas@enim.net,1039 Westside Freeway,ID,36934,F,11-11-1964,true&#xD;&#xA;49,Blossom,Dickson,Aenean.egestas@pretiumetrutrum.com,1647 Burnett Road,WI,34501,F,15-07-1958,true&#xD;&#xA;50,Bernard,Mcfarland,dis.parturient@diamPellentesquehabitant.edu,1671 Erringer Road,OR,33196,F,08-12-1962,true&#xD;&#xA;51,Kyle,Santos,Nunc.laoreet.lectus@adipiscinglacusUt.net,3960 Santa Monica Road,TX,38601,F,04-06-1995,true&#xD;&#xA;52,Salvador,Rios,venenatis.vel.faucibus@cursuspurusNullam.co.uk,3113 Via Real,SC,26328,F,16-08-1956,true&#xD;&#xA;53,Germane,Ingram,est.congue.a@euismod.edu,1070 North Preisker Lane,MA,39406,F,09-05-1973,true&#xD;&#xA;54,Tatiana,Cochran,ipsum.Phasellus@Crasloremlorem.net,3585 Cabrillo Highway,OK,28967,F,28-09-1958,true&#xD;&#xA;55,Lucas,Burke,tempor@Phasellusvitae.ca,4117 Calle Real,GA,43159,F,04-03-1974,true&#xD;&#xA;56,Lionel,Miller,auctor.ullamcorper.nisl@lacus.co.uk,1400 East Calle Primera,ND,29710,F,03-03-1980,true&#xD;&#xA;57,Maile,Huber,Nunc@Sednulla.edu,672 Camelback Rd,KY,29963,F,16-07-1967,true&#xD;&#xA;58,Rosalyn,Adams,tortor@Nullamlobortisquam.ca,4761 North Broadway Street,NH,37172,F,07-12-1959,true&#xD;&#xA;59,Willow,Boyd,ut.aliquam.iaculis@tellus.edu,1614 Lindbergh Blvd,AK,31088,F,20-03-1976,true&#xD;&#xA;60,Rafael,Morin,cursus.a.enim@Donecat.com,2279 Carpinteria North,NV,36586,F,24-08-1968,true&#xD;&#xA;61,Cherokee,Marsh,sem.vitae@etultricesposuere.ca,4008 Santa Ana Freeway,KS,37992,F,13-08-1982,true&#xD;&#xA;62,Meredith,Carson,quam@necurna.co.uk,1884 Via Real,AR,36393,F,20-02-1976,true&#xD;&#xA;63,Keefe,Everett,varius.orci@quis.org,2812 Newbury Road,NM,41781,F,03-06-1984,true&#xD;&#xA;64,Noelle,Franks,elit.erat@aodio.ca,1898 South Highway,MT,33708,M,03-03-1953,true&#xD;&#xA;65,Amery,Sullivan,eu.ultrices@Etiamgravida.edu,1834 Tanger Blvd,IL,44902,F,19-08-1969,true&#xD;&#xA;66,Rinah,Lindsey,sed.hendrerit.a@pharetrautpharetra.ca,3760 Santa Ana Freeway,IL,32435,F,15-11-1994,true&#xD;&#xA;67,Donna,Daniel,semper.et@idmagnaet.com,3630 Calle Real,MO,34212,F,03-06-1966,true&#xD;&#xA;68,Julian,Cote,facilisi.Sed.neque@Curabiturconsequatlectus.ca,4737 East Calle Primera,NH,36580,F,30-09-1984,true&#xD;&#xA;69,Brielle,Merritt,Nullam@noncursus.com,2242 Cabrillo Highway,DE,35368,F,20-06-1956,true&#xD;&#xA;70,Taylor,Pearson,Vivamus.rhoncus.Donec@magna.ca,3475 Katella Avenue,TX,39620,F,22-11-1995,true&#xD;&#xA;71,Yeo,Powell,justo.sit.amet@g-mail.com,3258 Santa Monica Road,DE,31850,F,21-07-1950,true&#xD;&#xA;72,Hedley,Levine,egestas.lacinia.Sed@gmail.com,4105 East 1st Street,LA,36254,M,22-06-1963,true&#xD;&#xA;73,Josiah,Daniel,Donec.dignissim@aliquam.net,1126 Calle Real,DE,38283,F,14-04-1973,true&#xD;&#xA;74,Griffin,Conner,Nam.ligula.elit@lectus.org,4993 South Highway,IL,45636,M,10-03-1967,true&#xD;&#xA;75,Lee,Harrell,Nam.consequat@Utsagittis.net,4562 124th,AR,44395,M,24-10-1988,true&#xD;&#xA;76,Scott,Sanchez,non.arcu.Vivamus@Quisquefringilla.net,3148 Redwood Highway,IN,34507,F,04-12-1984,true&#xD;&#xA;77,Nichole,Knapp,magna.Lorem.ipsum@eratVivamusnisi.edu,489 Carpinteria North,OR,38320,F,03-02-1990,true&#xD;&#xA;78,Lucas,Burke,tempor@Phasellusvitae.ca,1485 W. Russell St.,CO,38804,F,20-08-1977,true&#xD;&#xA;79,Bevis,Jones,fringilla.ornare@yahoo.com,3191 120th,IA,44655,F,22-09-1985,true&#xD;&#xA;80,Jameson,Goff,imperdiet.ornare@infelisNulla.org,4936 Moreno Drive,NM,29060,F,10-08-1977,true&#xD;&#xA;81,Regan,Adkins,interdum.Nunc.sollicitudin@idnunc.com,21 Santa Monica Road,NM,34583,F,27-04-1956,true&#xD;&#xA;82,Idola,Odom,enim@nuncQuisqueornare.org,285 Fontaine Road,OK,38330,M,28-08-1985,true&#xD;&#xA;83,Gay,Riggs,griggs@semut.org,2960 Bailard Avenue,IL,29788,F,03-05-1986,true&#xD;&#xA;84,Ignacia,Mccullough,primis.in@Duis.com,4298 Harry S Truman Blvd,IA,25895,M,20-08-1981,true&#xD;&#xA;85,Colin,Harding,congue@dignissimMaecenasornare.co.uk,3776 San Marcos,MO,35677,F,26-11-1958,true&#xD;&#xA;86,Merrill,Marsh,Fusce@dictum.com,2310 South Highway,ND,40236,F,27-01-1964,true&#xD;&#xA;87,Amela,English,mattis.ornare@risusa.ca,4705 Bailard Avenue,PA,45067,F,07-08-1952,true&#xD;&#xA;88,Lucas,Yates,magna@tristique.com,1710 San Marcos,OK,39657,F,25-01-1974,true&#xD;&#xA;89,Cara,Byers,Pellentesque.habitant@vulputate.org,719 Burnett Road,NV,44371,F,09-03-1972,true&#xD;&#xA;90,Sophia,Nunez,ligula@Nullam.net,1561 Richmond Hill,SC,44923,F,26-12-1987,true&#xD;&#xA;91,Brady,Oconnor,malesuada.vel.venenatis@sapienCras.co.uk,1348 Camelback Rd,KY,36448,M,23-03-1975,true&#xD;&#xA;92,Sawyer,Wise,Sed@vitae.co.uk,648 Cabrillo Highway,TN,44888,M,29-12-1960,true&#xD;&#xA;93,Arsenio,Le,ac.facilisis@tempus.org,1712 Cerrillos Road,SD,36483,F,08-03-1954,true&#xD;&#xA;94,Noah,Emerson,ante@elementumdui.net,2632 Timberlane Drive,UT,45371,F,13-07-1969,true&#xD;&#xA;95,Georgia,Reeves,primis.in@est.ca,3133 Timberlane Drive,VA,39391,F,09-10-1975,true&#xD;&#xA;96,Graham,Hayes,Ut.sagittis@dignissim.ca,742 W. Russell St.,IL,25994,F,28-07-1991,true&#xD;&#xA;97,Giacomo,Bradshaw,pharetra.Quisque.ac@euaugueporttitor.org,4311 Santa Monica Road,VA,32463,F,01-01-1968,true&#xD;&#xA;98,Shay,Mcdonald,ipsum@eleifend.net,3213 Harbor Dr,IL,41501,M,14-01-1986,true&#xD;&#xA;99,Amity,Watson,malesuada@luctus.co.uk,776 El Camino Real,FL,43235,M,22-06-1951,true&#xD;&#xA;100,Tyler,Cabrera,in@Fusce.ca,2960 San Simeon,MN,45239,M,19-05-1986,true&#xD;&#xA;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Excel"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="customer" name="tFixedFlowInput_1">
+      <column comment="" key="false" length="-1" name="customer_id" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="firstname" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="lastname" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="email" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="streetAddress" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="state" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="postalCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="gender" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="dob" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="current_flag" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_Boolean" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tHDFSOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHDFSOutput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_zBk4wJ18Eee6SKGqm1HfGA" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tHDFSConnection_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DISTRIBUTION" value="HORTONWORKS"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="HDP_2_6"/>
+    <elementParameter field="HADOOP_DISTRIBUTION" name="HDFS" value=""/>
+    <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTHENTICATION_MODE" value="USERNAME" show="false"/>
+    <elementParameter field="TEXT" name="FS_DEFAULT_NAME" value="&quot;hdfs://hdptestha&quot;"/>
+    <elementParameter field="CHECK" name="USE_DATANODE_HOSTNAME" value="true"/>
+    <elementParameter field="CHECK" name="USE_KRB" value="true"/>
+    <elementParameter field="TEXT" name="NAMENODE_PRINCIPAL" value="&quot;nn/_HOST@HDPHA.COM&quot;"/>
+    <elementParameter field="CHECK" name="USE_KEYTAB" value="false"/>
+    <elementParameter field="TEXT" name="PRINCIPAL" value="context.hdp26_Principal" show="false"/>
+    <elementParameter field="FILE" name="KEYTAB_PATH" value="context.hdp26_KeyTab" show="false"/>
+    <elementParameter field="CHECK" name="USE_MAPRTICKET" value="false" show="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;anonymous&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GROUP" value="&quot;supergroup&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="MAPRTICKET_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_CLUSTER" value="&quot;demo.mapr.com&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_DURATION" value="86400L" show="false"/>
+    <elementParameter field="BOTH_HADOOP" name="FILENAME" value="&quot;dewf.csv&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TYPEFILE" value="TEXT"/>
+    <elementParameter field="CLOSED_LIST" name="FILE_ACTION" value="CREATE"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="CUSTOM_ENCODING" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="KEYCOLUMN" value="customer_id" show="false"/>
+    <elementParameter field="COLUMN_LIST" name="VALUECOLUMN" value="customer_id" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="NOTE : Only boolean, byte, byte[], double, float, integer,&#xA;&#x9;&#x9;&#x9;&#x9;long, short, string are currently supported for key class and value&#xA;&#x9;&#x9;&#x9;&#x9;columns fields&#xA;&#x9;&#x9;&#x9;" show="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="COMPRESSION" value="GZIP" show="false"/>
+    <elementParameter field="LABEL" name="COMPRESS_NOTE" value="NOTE : Only support Linux client and hadoop native code is&#xA;&#x9;&#x9;&#x9;&#x9;necessary, also need to add the native code path to&#xA;&#x9;&#x9;&#x9;&#x9;$java.library.path&#xA;&#x9;&#x9;&#x9;" show="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="TABLE" name="HADOOP_ADVANCED_PROPERTIES"/>
+    <elementParameter field="CHECK" name="SET_MAPR_HOME_DIR" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MAPR_HOME_DIR" value="&quot;/opt/mapr&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_HADOOP_LOGIN" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HADOOP_LOGIN" value="&quot;kerberos&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="customer" name="tHDFSOutput_1">
+      <column comment="" key="false" length="-1" name="customer_id" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="firstname" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="lastname" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="email" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="streetAddress" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="state" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="postalCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="gender" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="dob" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="current_flag" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_Boolean" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tHDFSConnection_1" offsetLabelX="0" offsetLabelY="0" source="tHDFSConnection_1" target="tFixedFlowInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tHDFSOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHDFSConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>
